@@ -1,0 +1,58 @@
+
+<h2 class="empTable">Employee Table</h2>
+
+<div >
+  <a class="addEmp" (click)="addEmployeeHandler()">Add Employee</a>
+</div>
+
+<!-- <div *ngIf="display">
+  <app-add-employee></app-add-employee>
+</div> -->
+<!-- 
+<div> -->
+<!-- <table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Employee Id</th>
+      <th scope="col">Employee Number</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Band</th>
+      <th scope="col">Location</th>
+      <th scope="col">Status</th>
+      <th scope="col">Experience</th>
+      <th scope="col" style="float:right">Actions</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let emp of employees">
+      <td>{{emp.employeeId}}</td>
+      <td>{{emp.employeeNumber}}</td>
+      <td>{{emp.fullName}}</td>
+      <td>{{emp.emailId}}</td>
+      <td>{{emp.band}}</td>
+      <td>{{emp.location}}</td>
+      <td>{{emp.employeeStatus}}</td>
+      <td>{{emp.yearOfExperience}}</td> -->
+      <!-- <td><button style="background-color: teal; color: white;" (click)= "updateEmployee(emp.employeeNumber)" >Update</button></td>
+      <td><button style="background-color: teal; color: white;" (click)= "deleteEmployee(emp.employeeNumber)" >Delete</button></td> -->
+      <!-- <td><button style="background-color: teal; color: white;">View</button></td> -->
+      
+    <!-- </tr>   
+  </tbody>
+</table>
+</div> -->
+
+<ag-grid-angular
+   style="width: 100%; height: 100%"
+   class="ag-theme-alpine"
+   [columnDefs]="columnDefs"
+   [defaultColDef]="defaultColDef"
+   [rowData]="employees"
+   [rowSelection]="'multiple'"
+   [animateRows]="true"
+   [pagination]="true"
+ 
+ ></ag-grid-angular>
+

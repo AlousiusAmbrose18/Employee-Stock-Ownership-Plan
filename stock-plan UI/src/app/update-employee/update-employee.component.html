@@ -1,0 +1,41 @@
+<form (ngSubmit)= "onSubmit()">
+    <div class="container">
+      <h1>Update Employee</h1>
+     
+      <hr>
+
+      <label><b>Employee Number</b></label>
+      <input type="text" placeholder="Enter Employee Number" 
+      [(ngModel)] =  "employee.employeeNumber" name="employeeNumber">
+
+      <label><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" 
+      [(ngModel)] =  "employee.fullName" name="fullName" >
+
+      <label><b>Email</b></label>
+      <input type="email" placeholder="Enter Email"
+      [(ngModel)] =  "employee.emailId" name="emailId" >
+
+      <label><b>Band</b></label>
+      <input type="text" placeholder="Enter band"
+      [(ngModel)] =  "employee.band" name="band" >
+
+      <label><b>Location</b></label>
+      <input type="text" placeholder="Enter location"
+      [(ngModel)] =  "employee.location" name="location" >
+  
+      <label><b>Status</b></label>
+      <input type="text" placeholder="Enter Employee Status"
+      [(ngModel)] =  "employee.employeeStatus" name="employeeStatus" >
+  
+      <label><b>Experience</b></label>
+      <input type="number" placeholder="Experience"
+      [(ngModel)] =  "employee.yearOfExperience" name="yearOfExperience" >
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Submit</button>
+      </div>
+    </div>
+  </form>
+
