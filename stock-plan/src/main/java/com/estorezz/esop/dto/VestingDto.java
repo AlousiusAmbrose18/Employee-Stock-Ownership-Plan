@@ -1,5 +1,6 @@
 package com.estorezz.esop.dto;
 
+
 public class VestingDto {
 	
 	private String planYear;
